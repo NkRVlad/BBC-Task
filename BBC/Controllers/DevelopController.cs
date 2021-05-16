@@ -69,7 +69,7 @@ namespace BBC.Controllers
             return Ok(new { Message = "This message is seen by the admin" } );
         }
         [HttpGet]
-        [Authorize(Roles = "Guest, Admin")]
+        [Authorize(Roles = "Guest")]
         [Route("guest-test")]
         public IActionResult GuestTest()
         {
